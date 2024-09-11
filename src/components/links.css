@@ -1,0 +1,22 @@
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    padding: 6px 8px;
+    border-radius: 4px;
+    background-color: #c7e4ff;
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #c82333;
+    background-color: #e9ecef;
+}
+
+a:visited {
+    color: #6f42c1;
+}
