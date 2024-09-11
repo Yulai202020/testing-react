@@ -16,29 +16,29 @@ function MyForm() {
     }
 
     return (
-        <>
         <div className='wrapped'>
             <div className="form-container">
-                <form onSubmit={onSubmit}>
-                    <label htmlFor="input">Input your name</label>
-                    <input
-                        aria-label="input"
-                        id="input"
-                        type="text"
-                        value={inputValue}
-                        onChange={handleChange}
-                    />
-                    <button type="submit">Submit</button>
-                </form>
+                <div className='div-margin'>
+                    <form onSubmit={onSubmit}>
+                        <label htmlFor="input">Input your name</label>
+                        <input
+                            aria-label="input"
+                            id="input"
+                            type="text"
+                            value={inputValue}
+                            onChange={handleChange}
+                        />
+                        <button type="submit">Submit</button>
+                    </form>
 
-                {isSubmitted && (
-                    <p className="value-display">Hello {inputValue}!</p>
-                )}
+                    {isSubmitted && (
+                        <p className="value-display">Hello {inputValue}!</p>
+                    )}
 
-                <a href="/">Home</a>
+                    <a href="/">Home</a>
+                </div>
             </div>
         </div>
-        </>
     );
 }
 

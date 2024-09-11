@@ -8,12 +8,13 @@ function Button() {
     }
 
     return (
-        <>
+        <div className="div-margin">
             <button onClick={onClick}>Click me</button>
             {isWasPressed && (
                 <p>Hello</p>
             )}
-        </>
+            <a href="/">Home</a>
+        </div>
     );
 }
 

@@ -3,6 +3,6 @@ body, html {
     padding: 0;
 }
 
-.fr * {
-    padding-top: 10px;
+.div-margin>* {
+    margin: 10px;
 }

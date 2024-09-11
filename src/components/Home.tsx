@@ -2,7 +2,7 @@ import "./links.css";
 
 function Home() {
     return (
-        <div className="fr">
+        <div className="div-margin">
             <h1>Home Page</h1>
 
             <p><a href="/form">Form with greeting</a></p>
