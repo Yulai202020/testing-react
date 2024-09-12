@@ -22,7 +22,10 @@ function AnimatedBorder() {
                             type="text"
                             value={inputValue}
                             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInputValue(e.target.value)}
-                            readOnly
+
+                            // using react
+                            onMouseEnter={(e: React.MouseEvent<HTMLInputElement>) => {e.currentTarget.setAttribute("readonly", "true")}}
+                            onMouseLeave={(e: React.MouseEvent<HTMLInputElement>) => {e.currentTarget.setAttribute("readonly", "false")}}
                         />
 
                         <label htmlFor="input">Enter password</label>
