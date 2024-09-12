@@ -2,16 +2,26 @@ import React, { useState } from 'react';
 import './MyForm.css';
 import "./links.css";
 
+// interface probs {
+//     name: string
+// }
+
 function MyForm() {
     const [inputValue, setInputValue] = useState<string>('');
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setInputValue(e.target.value);
+        const to_set = e.target.value;
+
+        if (to_set === "") {
+            setIsSubmitted(false);
+        }
+
+        setInputValue(to_set);
     };
 
     const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault(); // Prevent the default form submission behavior
+        e.preventDefault();
         setIsSubmitted(true);
     }
 
@@ -31,7 +41,7 @@ function MyForm() {
                         <button type="submit">Submit</button>
                     </form>
 
-                    {isSubmitted && (
+                    {isSubmitted && inputValue !== "" && (
                         <p className="value-display">Hello {inputValue}!</p>
                     )}
 
