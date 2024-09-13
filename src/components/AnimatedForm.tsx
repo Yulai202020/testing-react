@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import styles_scss from "./AnimatedForm.module.scss";
-import styles_css from "./AnimatedForm.module.css";
+import animation_style from "./AnimatedForm.module.scss";
+import form_style from "./AnimatedForm.module.css";
 
 function AnimatedForm() {
     const [inputValue, setInputValue] = useState<string>('');
@@ -12,11 +12,11 @@ function AnimatedForm() {
     }
 
     return (
-        <div className={styles_scss.main}>
-            <div className={styles_scss.box}>
-                <form onSubmit={onSubmit} className={styles_css.animated_form}>
+        <div className={animation_style.main}>
+            <div className={animation_style.box}>
+                <form onSubmit={onSubmit} className={form_style.animated_form}>
                     <input
-                        className={styles_css.line_input}
+                        className={form_style.line_input}
                         aria-label="input"
                         id="input"
                         type="text"
@@ -31,7 +31,7 @@ function AnimatedForm() {
                     />
 
                     <input
-                        className={styles_css.line_input}
+                        className={form_style.line_input}
                         aria-label="input"
                         id="input"
                         type="password"
