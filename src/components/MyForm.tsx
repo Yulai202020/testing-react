@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import './MyForm.css';
 import "./links.css";
 
-// interface probs {
-//     name: string
-// }
-
 function MyForm() {
     const [inputValue, setInputValue] = useState<string>('');
     const [isSubmitted, setIsSubmitted] = useState(false);

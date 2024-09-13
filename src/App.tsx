@@ -2,7 +2,8 @@
 import Home from "./components/Home";
 import Form from "./components/MyForm";
 import Button from "./components/Button";
-import AnimatedBorder from "./components/AnimatedBorders";
+import GradientForm from "./components/GradientForm";
+import AnimatedForm from "./components/AnimatedForm";
 
 import "./std.css";
 
@@ -14,8 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/form" element={<Form />}/>
-        <Route path="/animatedform" element={<AnimatedBorder />}/>
+        <Route path="/animatedform" element={<AnimatedForm />}/>
         <Route path="/button" element={<Button />}/>
+        <Route path="/gradientform" element={<GradientForm />}/>
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

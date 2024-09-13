@@ -1,8 +1,8 @@
-import "./AnimatedBorder.scss";
-import "./AnimatedBorder_content.css";
+import "./AnimatedForm.scss";
+import "./AnimatedForm.css";
 import { useState } from "react";
 
-function AnimatedBorder() {
+function AnimatedForm() {
     const [inputValue, setInputValue] = useState<string>('');
     const [password, setPassword] = useState<string>('');
 
@@ -48,4 +48,4 @@ function AnimatedBorder() {
     );
 }
 
-export default AnimatedBorder;
+export default AnimatedForm;
