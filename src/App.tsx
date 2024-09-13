@@ -5,6 +5,7 @@ import Button from "./components/Button";
 import GradientForm from "./components/GradientForm";
 import AnimatedForm from "./components/AnimatedForm";
 
+import "./links.css";
 import "./std.css";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';

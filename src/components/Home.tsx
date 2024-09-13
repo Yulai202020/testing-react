@@ -1,5 +1,3 @@
-import "./links.css";
-
 function Home() {
     return (
         <div className="div-margin">

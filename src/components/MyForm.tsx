@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './MyForm.css';
-import "./links.css";
 
 function MyForm() {
     const [inputValue, setInputValue] = useState<string>('');
