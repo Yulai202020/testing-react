@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./GradientForm.css";
+import style from "./GradientForm.module.css";
 
 function GradientForm() {
     const [inputValue, setInputValue] = useState<string>('');
@@ -11,10 +11,10 @@ function GradientForm() {
     };
 
     return (
-        <div className="container">
-            <form onSubmit={onSubmit} className="gradient-form">
+        <div className={style.container}>
+            <form onSubmit={onSubmit} className={style.gradient_form}>
                 <input
-                    className="line-input"
+                    className={style.line_input}
                     aria-label="Username"
                     id="username"
                     type="text"
@@ -23,7 +23,7 @@ function GradientForm() {
                     placeholder="Enter username"
                 />
                 <input
-                    className="line-input"
+                    className={style.line_input}
                     aria-label="Password"
                     id="password"
                     type="password"
@@ -31,7 +31,7 @@ function GradientForm() {
                     onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
                     placeholder="Enter password"
                 />
-                <button className="gradient-button" type="submit">Submit</button>
+                <button className={style.gradient_button} type="submit">Submit</button>
             </form>
         </div>
     );

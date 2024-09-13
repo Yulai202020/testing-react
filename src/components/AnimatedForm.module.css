@@ -1,6 +1,6 @@
 /* form doesnt take 100% of space in .box div */
 
-.line-input {
+.line_input {
     background: transparent;
     border: none;
     border-bottom: 2px solid navy;
@@ -14,20 +14,20 @@
     margin: 20%;
 }
 
-.line-input::placeholder {
+.line_input::placeholder {
     color: #aaa;
 }
 
-.line-input:focus {
+.line_input:focus {
     border-bottom: 2px solid blue;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.line-input:hover {
+.line_input:hover {
     border-bottom: 2px solid blue;
 }
 
-.animated-form {
+.animated_form {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -36,11 +36,11 @@
     background: rgba(0, 0, 0, 0.0);
 }
 
-.animated-form>* {
+.animated_form>* {
     margin: 10px;
 }
 
-.animated-form input{
+.animated_form input{
     width: 100%;
     height: 40px;
     margin: 10px;
