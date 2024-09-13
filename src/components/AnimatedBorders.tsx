@@ -13,10 +13,10 @@ function AnimatedBorder() {
     return (
         <div className="main">
             <div className="box">
-                <div className="div-margin">
-                    <form onSubmit={onSubmit}>
-                        <label htmlFor="input">Enter username</label>
+                <form onSubmit={onSubmit}>
+                    <div className="tmp">
                         <input
+                            className="line-input"
                             aria-label="input"
                             id="input"
                             type="text"
@@ -24,22 +24,25 @@ function AnimatedBorder() {
                             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setInputValue(e.target.value)}
 
                             // using react
-                            onMouseEnter={(e: React.MouseEvent<HTMLInputElement>) => {e.currentTarget.setAttribute("readonly", "true")}}
-                            onMouseLeave={(e: React.MouseEvent<HTMLInputElement>) => {e.currentTarget.setAttribute("readonly", "false")}}
+                            // onMouseEnter={(e: React.MouseEvent<HTMLInputElement>) => {e.currentTarget.setAttribute("readonly", "true")}}
+                            // onMouseLeave={(e: React.MouseEvent<HTMLInputElement>) => {e.currentTarget.removeAttribute("readonly")}}
+
+                            placeholder="Enter username"
                         />
 
-                        <label htmlFor="input">Enter password</label>
                         <input
+                            className="line-input"
                             aria-label="input"
                             id="input"
                             type="password"
                             value={password}
                             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
+                            placeholder="Enter password"
                         />
 
                         <button type="submit">Submit</button>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     );
