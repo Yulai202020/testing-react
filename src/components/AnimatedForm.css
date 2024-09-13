@@ -1,3 +1,5 @@
+/* form doesnt take 100% of space in .box div */
+
 .line-input {
     background: transparent;
     border: none;
@@ -26,15 +28,21 @@
 }
 
 .animated-form {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-basis: 100%;
-    height: 100%;
     background: rgba(0, 0, 0, 0.0);
 }
 
 .animated-form>* {
     margin: 10px;
+}
+
+.animated-form input{
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    position: relative;
 }
