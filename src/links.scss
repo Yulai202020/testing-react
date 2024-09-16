@@ -3,7 +3,7 @@ a {
     text-decoration: none;
     transition: 0.3s;
 
-    :hover {
+    &:hover {
         padding: 6px 8px;
         border-radius: 4px;
         background-color: #c7e4ff;
@@ -11,12 +11,12 @@ a {
         text-decoration: underline;
     }
 
-    :active {
+    &:active {
         color: #c82333;
         background-color: #e9ecef;
     }
 
-    :visited {
+    &:visited {
         color: #6f42c1;
     }
 }

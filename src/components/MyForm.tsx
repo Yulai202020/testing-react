@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MyForm.css';
+import styles from './MyForm.module.scss';
 
 function MyForm() {
     const [inputValue, setInputValue] = useState<string>('');
@@ -21,9 +21,9 @@ function MyForm() {
     }
 
     return (
-        <div className='wrapped'>
-            <div className="form-container">
-                <div className='div-margin'>
+        <div className={styles.wrapped}>
+            <div className={styles.form_container}>
+                <div className="div_margin">
                     <form onSubmit={onSubmit}>
                         <label htmlFor="input">Input your name</label>
                         <input
@@ -37,7 +37,7 @@ function MyForm() {
                     </form>
 
                     {isSubmitted && inputValue !== "" && (
-                        <p className="value-display">Hello {inputValue}!</p>
+                        <p>Hello {inputValue}!</p>
                     )}
 
                     <a href="/">Home</a>
