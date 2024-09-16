@@ -3,9 +3,9 @@ import { render, screen, fireEvent } from '@testing-library/react';
 
 import '@testing-library/jest-dom/vitest';
 
-import Home from '../src/components/Home';
-import Button from '../src/components/Button';
-import MyForm from '../src/components/MyForm';
+import Home from '../src/components/Home/Home';
+import Button from '../src/components/Button/Button';
+import MyForm from '../src/components/MyForm/MyForm';
 
 describe('Testing react', () => {
     it('Testing Home page', () => {

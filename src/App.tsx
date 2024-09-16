@@ -1,9 +1,9 @@
 // src/App.tsx
-import Home from "./components/Home";
-import Form from "./components/MyForm";
-import Button from "./components/Button";
-import GradientForm from "./components/GradientForm";
-import AnimatedForm from "./components/AnimatedForm";
+import Home from "./components/Home/Home";
+import Form from "./components/MyForm/MyForm";
+import Button from "./components/Button/Button";
+import GradientForm from "./components/GradientForm/GradientForm";
+import AnimatedForm from "./components/AnimatedForm/AnimatedForm";
 
 import "./links.scss";
 import "./std.scss";
