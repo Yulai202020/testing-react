@@ -1,5 +1,5 @@
 import { useState } from "react";
-import gradient_style from "./GradientForm.module.css";
+import gradient_style from "./GradientForm.module.scss";
 
 function GradientForm() {
     const [inputValue, setInputValue] = useState<string>('');
