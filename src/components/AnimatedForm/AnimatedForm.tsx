@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import style from "./AnimatedForm.module.scss";
+import style from "./style.module.scss";
 
 function AnimatedForm() {
     const [inputValue, setInputValue] = useState<string>('');

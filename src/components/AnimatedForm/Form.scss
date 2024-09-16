@@ -1,0 +1,43 @@
+.line_input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid navy;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+  
+    &:hover {
+        border-bottom: 2px solid blue;
+    }
+  
+    &::placeholder {
+        color: #aaa;
+    }
+  
+    &:focus {
+        border-bottom: 2px solid blue;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.animated_form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.0);
+  
+    >* {
+        margin: 10px;
+    }
+  
+    input {
+        width: 100%;
+        height: 40px;
+        margin: 10px;   
+        position: relative;
+    }
+}
