@@ -5,6 +5,8 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src", 
     "target": "ES6",
     "module": "ESNext",
     "jsx": "react-jsx",
@@ -16,6 +18,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true
   },
-  "include": ["src", "tests"],
+  "include": ["packages/demo/src"],
   "exclude": ["node_modules"]
 }
