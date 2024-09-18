@@ -1,0 +1,23 @@
+.container {
+    height: 100dvh;
+    background: linear-gradient(25deg, black, navy);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    background-color: blue;
+    /* background: linear-gradient(180deg, black, blue); */
+
+}
+
+.text {
+    color: white;
+}

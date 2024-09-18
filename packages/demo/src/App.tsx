@@ -4,6 +4,7 @@ import Form from "./components/MyForm/MyForm";
 import Button from "./components/Button/Button";
 import GradientForm from "./components/GradientForm/GradientForm";
 import AnimatedForm from "./components/AnimatedForm/AnimatedForm";
+import NewForm from "./components/NewForm/NewForm";
 
 import "./links.scss";
 import "./std.scss";
@@ -19,6 +20,7 @@ function App() {
         <Route path="/animatedform" element={<AnimatedForm />}/>
         <Route path="/button" element={<Button />}/>
         <Route path="/gradientform" element={<GradientForm />}/>
+        <Route path="/newform" element={<NewForm />}/>
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>

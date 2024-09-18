@@ -25,19 +25,20 @@ function MyForm() {
             <div className={styles.form_container}>
                 <div className="div_margin">
                     <form onSubmit={onSubmit}>
-                        <label htmlFor="input">Input your name</label>
+                        <label htmlFor="input" className={styles.label}>Input your name</label>
                         <input
+                            className={styles.input}
                             aria-label="input"
                             id="input"
                             type="text"
                             value={inputValue}
                             onChange={handleChange}
                         />
-                        <button type="submit">Submit</button>
+                        <button type="submit" className={styles.submit_button}>Submit</button>
                     </form>
 
                     {isSubmitted && inputValue !== "" && (
-                        <p>Hello {inputValue}!</p>
+                        <p className={styles.text}>Hello {inputValue}!</p>
                     )}
 
                     <a href="/">Home</a>
